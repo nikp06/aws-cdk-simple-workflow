@@ -1,3 +1,17 @@
+# Usage
+
+- login via `aws configure sso` or `aws sso login`
+
+```bash
+export AWS_ACCOUNT=<account id>
+export AWS_REGION=<aws region>
+cdk synth
+cdk deploy
+```
+
+- confirm email subscription (should have received an email during deployment)
+- upload an example file to the new s3 bucket 
+- see if you receive an email - done
 
 # Welcome to your CDK Python project!
 

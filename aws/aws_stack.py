@@ -25,7 +25,7 @@ class CdkStack(Stack):
             removal_policy=RemovalPolicy.DESTROY, # so it is destroyed when we delete the stack or change the name of the bucket
             auto_delete_objects=True, # same
             event_bridge_enabled=True, # so we can put a trigger for the step function on the bucket
-            # block_public_access=s3.BlockPublicAccess.BLOCK_ALL
+            block_public_access=s3.BlockPublicAccess.BLOCK_ALL
         )
 
         # defining the rule that triggers the step function
